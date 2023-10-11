@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "CommitMono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/CommitMono/CommitMono-400-Regular.otf);
+}
+
+@font-face {
+  font-family: "CommitMono";
+  font-style: italic;
+  font-weight: 400;
+  src: url(./assets/fonts/CommitMono/CommitMono-400-Italic.otf);
+}
+
+@font-face {
+  font-family: "CommitMono";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./assets/fonts/CommitMono/CommitMono-700-Regular.otf);
+}
+
+@font-face {
+  font-family: "CommitMono";
+  font-style: italic;
+  font-weight: 700;
+  src: url(./assets/fonts/CommitMono/CommitMono-700-Italic.otf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-cm text-lg;
+}
+
+nav {
+  box-shadow: 0px 2px 5px #ffb088;
+}
+
+progress {
+  @apply h-2 inline-block align-baseline appearance-none w-full overflow-hidden border-0 rounded bg-progress text-primary;
+}
+
+progress::-webkit-progress-bar {
+  @apply rounded bg-progress;
+}
+
+progress[value]::-webkit-progress-value {
+  @apply bg-primary;
+}
+
+progress::-moz-progress-bar {
+  @apply bg-primary;
+}
